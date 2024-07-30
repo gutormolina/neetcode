@@ -1,3 +1,6 @@
+#include <iostream>
+using namespace std;
+
 class DynamicArray {
 public:
     int *arr;
@@ -52,3 +55,11 @@ public:
         return capacity;
     }
 };
+
+int main() {
+    DynamicArray array(1);
+    array.pushback(1);
+    cout << array.getCapacity() << endl;
+    array.pushback(2);
+    cout << array.getCapacity() << endl;
+}
